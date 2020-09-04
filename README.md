@@ -27,14 +27,20 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. What is the DOM?
+The DOM (document object model) is an application programming interface that breaks down the elements of a webpage into a tree like structure consisting of nodes which can be manipulated by the user.
 
 2. What is an event?
+An event is something that happens in the webpage when a corresponding action takes place. For example - when a user clicks a button on a page and it submits a form.
 
 3. What is an event listener?
+An event listener is a method that tells the webpage to execute a certain piece of code when a certain action is taken.
 
 4. Why would we convert a NodeList into an Array?
+We would do this that we could utilize array methods on the node list.
 
 5. What is a component?
+
+A component is a function that allows us to use reusable pieces of code to help build similar elements on a webapge.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
@@ -44,19 +50,19 @@ You are expected to be able to answer questions in these areas. Your responses c
 
 #### Repository Set Up
 
-- [ ] Create a forked copy of this project
-- [ ] Add your team lead as collaborator on Github
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!)
-- [ ] Create a new branch: `git checkout -b <firstName-lastName>`.
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly
-- [ ] Push commits: `git push origin <firstName-lastName>`
+- [X] Create a forked copy of this project
+- [X] Add your team lead as collaborator on Github
+- [X] Clone your OWN version of the repository (Not Lambda's by mistake!)
+- [X] Create a new branch: `git checkout -b <firstName-lastName>`.
+- [X] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly
+- [X] Push commits: `git push origin <firstName-lastName>`
 
 #### Launching the App
 
-- [ ] Navigate to the root of the project with your command line
-- [ ] Run `npm install` to download the dependencies listed in the `package.json` file
-- [ ] Run `npm start` to compile the project and serve it
-- [ ] Navigate Chrome to the URL indicated in the output of the `npm start` command
+- [X] Navigate to the root of the project with your command line
+- [X] Run `npm install` to download the dependencies listed in the `package.json` file
+- [X] Run `npm start` to compile the project and serve it
+- [X] Navigate Chrome to the URL indicated in the output of the `npm start` command
 
 ### Task 2: Project Requirements
 
