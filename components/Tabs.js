@@ -13,15 +13,23 @@ import axios from 'axios';
 
 axios.get('https://lambda-times-api.herokuapp.com/topics')
 .then(response => {
-    const info = response.data
+    const info = Array.from(response.data.topics)
     const container = document.querySelector('.topics')
-    container.append(tabMaker(info))
+
+    info.map(item => {
+        const tabItem = tabMaker(item);
+        container.append(tabItem);
+        return tabItem;
+    });
 })
 .catch(error => {
     console.log(error)
 })
 
-
+const tabMaker = (info) => {
 const tab = document.createElement('div')
 tab.classList.add('tab')
-tab.textContent = 'topic here'
+tab.textContent = info
+
+return tab
+}
