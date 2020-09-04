@@ -24,17 +24,46 @@ import axios from 'axios';
 
 axios.get('https://lambda-times-api.herokuapp.com/articles')
 .then(response => {
-    const info = Array.from(response.data.topics.javascript)
-    const container = document.querySelector('.cards-container')
+    const java = response.data.articles.javascript
+    const bootstrap = response.data.articles.bootstrap
+    const technology = response.data.articles.technology
+    const jquery = response.data.articles.jquery
+    const node = response.data.articles.node
+    const mainContainer = document.querySelector('.cards-container')
 
-    info.map(item => {
+    java.map(item => {
         const cardItem = cardMaker(item);
-        container.append(cardItem);
+        mainContainer.append(cardItem);
         return cardItem;
     });
 
+    bootstrap.map(item => {
+        const cardItem = cardMaker(item);
+        mainContainer.append(cardItem);
+        return cardItem;
+    });
 
-    container.append(cardMaker(info))
+    technology.map(item => {
+        const cardItem = cardMaker(item);
+        mainContainer.append(cardItem);
+        return cardItem;
+    });
+
+    jquery.map(item => {
+        const cardItem = cardMaker(item);
+        mainContainer.append(cardItem);
+        return cardItem;
+    });
+
+    node.map(item => {
+        const cardItem = cardMaker(item);
+        mainContainer.append(cardItem);
+        return cardItem;
+    });
+
+    
+
+
 })
 .catch(error => {
     console.log(error)
@@ -65,5 +94,4 @@ function cardMaker(info){
 
 console.log(mainContainer)
 return mainContainer;
-
 }
