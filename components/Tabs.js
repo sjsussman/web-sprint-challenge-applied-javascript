@@ -35,4 +35,5 @@ tab.textContent = info
 return tab
 }
 
-// container.append(tabMaker(Home))
+const container = document.querySelector('.topics')
+container.append(tabMaker('All'))
