@@ -61,7 +61,13 @@ axios.get('https://lambda-times-api.herokuapp.com/articles')
         return cardItem;
     });
 
-    
+const titles = Array.from(document.querySelector('.cards-container'))
+titles.forEach(item => {
+    item.addEventListener('click', (event) => {
+    console.log('Hello')
+    event.stopPropagation();
+})
+})
 
 
 })
@@ -92,6 +98,12 @@ function cardMaker(info){
     img.src = info.authorPhoto
     author.textContent = `${info.authorName}`
 
-console.log(mainContainer)
+
+
+// console.log(mainContainer)
 return mainContainer;
 }
+
+window.addEventListener('click', (event) => {
+    console.log(event.target.textContent);
+  });
