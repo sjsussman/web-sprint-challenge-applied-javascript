@@ -23,6 +23,7 @@ axios.get('https://lambda-times-api.herokuapp.com/topics')
     });
 })
 .catch(error => {
+    alert('There was an error loading the webpage. If this issue persists please contact your system administrator')
     console.log(error)
 })
 
@@ -33,3 +34,5 @@ tab.textContent = info
 
 return tab
 }
+
+// container.append(tabMaker(Home))

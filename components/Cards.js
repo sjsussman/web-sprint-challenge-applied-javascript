@@ -61,17 +61,9 @@ axios.get('https://lambda-times-api.herokuapp.com/articles')
         return cardItem;
     });
 
-const titles = Array.from(document.querySelector('.cards-container'))
-titles.forEach(item => {
-    item.addEventListener('click', (event) => {
-    console.log('Hello')
-    event.stopPropagation();
-})
-})
-
-
 })
 .catch(error => {
+    alert('There was an error loading the webpage. If this issue persists please contact your system administrator')
     console.log(error)
 })
 
